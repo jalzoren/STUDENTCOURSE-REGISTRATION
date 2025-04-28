@@ -159,3 +159,8 @@ table td {
 .submit:hover {
   background-color: #022a6c;
 }
+
+.msg-checkbox{
+  padding: 10px;
+  
+}
