@@ -76,7 +76,7 @@ input[type="email"] {
   margin-bottom: 10px;
   border: 1px solid #b0c4de;
   border-radius: 10px;
-  background: #f0f8ff;
+  background: #fff;
   font-size: 14px;
   transition: all 0.3s ease;
 }
@@ -88,7 +88,7 @@ input[type="email"]:focus {
   outline: none;
 }
 
-.submit {
+.viewcourses {
   width: 100%;
   padding: 10px;
   background-color: #022a6c;
@@ -103,7 +103,7 @@ input[type="email"]:focus {
 
 }
 
-.submit:hover {
+.viewcourses:hover {
   background-color: #012156;
 }
 
