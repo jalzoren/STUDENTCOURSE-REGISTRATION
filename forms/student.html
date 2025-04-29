@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLP STUDENT COURSE REGISTRATION SYSTEM</title>
+    <link rel="stylesheet" href="../css/style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="image">
+      <img src="../images/logoplp.png" alt="PLP Logo" />
+    </div>
+    <div class="container">
+      <form>
+        <h2>Student Course Registration</h2>
+        <hr />
+        <h1>Hello, <span>Name!</span></h1>
+
+        <button type="button" class="viewcourses" id="submit">
+          Register
+        </button>
+      </form>
+    </div>
+
+    <div id="popup" style="display: none">
+      <div id="popupContainer"></div>
+    </div>
+
+    <footer>
+      <div class="ad-footer">
+        <p>
+          <span>Pamantasan ng Lungsod ng Pasig</span> | Flavier, Laurence James
+          L.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("submit").addEventListener("click", function () {
+        fetch("../forms/student-popup.html")
+          .then((response) => response.text())
+          .then((data) => {
+            const container = document.getElementById("popup");
+            container.innerHTML = data;
+
+            container.style.display = "block";
+
+            const closeButton = container.querySelector(".close-btn");
+            if (closeButton) {
+              closeButton.addEventListener("click", function () {
+                container.style.display = "none";
+              });
+            }
+
+            const scripts = container.querySelectorAll("script");
+            scripts.forEach((oldScript) => {
+              const newScript = document.createElement("script");
+              if (oldScript.src) {
+                newScript.src = oldScript.src;
+              } else {
+                newScript.textContent = oldScript.textContent;
+              }
+              document.body.appendChild(newScript);
+              oldScript.remove();
+            });
+          })
+          .catch((error) => {
+            console.error("Error loading HTML:", error);
+          });
+      });
+    </script>
+  </body>
+</html>

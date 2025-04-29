@@ -21,7 +21,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 420px;
+  width: 820px;
   height: 500px;
   max-width: 1200px;
   background: #e6ebef;
@@ -56,11 +56,31 @@ hr{
   margin-bottom: 10px;
 }
 form h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
   color: #022a6c;
   text-transform: capitalize;
 }
+
+
+
+form h1 {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #000000;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+
+form h1 span {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #022a6c;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
 
 label {
   display: block;
@@ -88,7 +108,7 @@ input[type="email"]:focus {
   outline: none;
 }
 
-.register {
+.viewcourses {
   width: 100%;
   padding: 10px;
   background-color: #022a6c;
@@ -103,7 +123,7 @@ input[type="email"]:focus {
 
 }
 
-.register:hover {
+.viewcourses:hover {
   background-color: #012156;
 }
 

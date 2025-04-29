@@ -51,16 +51,14 @@
           name="yearSection"
           placeholder="Enter Year and Section :"
         />
-
-        <button type="button" class="viewcourses" id="submit">
-          View and Select Available Courses
+        
+        <button type="button" class="register" id="register" onclick="location.href='../forms/student.html';">
+          Register
         </button>
       </form>
     </div>
 
-    <div id="popup" style="display: none">
-      <div id="popupContainer"></div>
-    </div>
+  
 
     <footer>
       <div class="ad-footer">
@@ -72,38 +70,7 @@
     </footer>
 
     <script>
-      document.getElementById("submit").addEventListener("click", function () {
-        fetch("../forms/student-popup.html")
-          .then((response) => response.text())
-          .then((data) => {
-            const container = document.getElementById("popup");
-            container.innerHTML = data;
-
-            container.style.display = "block";
-
-            const closeButton = container.querySelector(".close-btn");
-            if (closeButton) {
-              closeButton.addEventListener("click", function () {
-                container.style.display = "none";
-              });
-            }
-
-            const scripts = container.querySelectorAll("script");
-            scripts.forEach((oldScript) => {
-              const newScript = document.createElement("script");
-              if (oldScript.src) {
-                newScript.src = oldScript.src;
-              } else {
-                newScript.textContent = oldScript.textContent;
-              }
-              document.body.appendChild(newScript);
-              oldScript.remove();
-            });
-          })
-          .catch((error) => {
-            console.error("Error loading HTML:", error);
-          });
-      });
+    
     </script>
   </body>
 </html>
