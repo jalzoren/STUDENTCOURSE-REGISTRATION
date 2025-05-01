@@ -52,3 +52,13 @@ project-root/
     └── logoplp.png          
 
 
+## Screenshot / Interface Preview
+
+Here’s a preview of the **Student Course Registration System** interface:
+
+
+<p align="center">
+  <img src="[https://i.imgur.com/yourImageId.png](https://imgur.com/xZy8AYF)" alt="PLP Student Course Registration" width="600">
+</p>
+*Figure 1: PLP Student Course Registration Homepage*
+
