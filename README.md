@@ -61,5 +61,18 @@ Here’s a preview of the **Student Course Registration System** interface:
   <img src="https://i.imgur.com/xZy8AYF.png" alt="PLP Student Course Registration" width="600">
 </p>
 
-*Figure 1: PLP Student Course Registration Homepage*
+*Figure 1: PLP Student Course Registration / Homepage*
 
+
+
+<p align="center">
+  <img src="https://i.imgur.com/xZy8AYF.png" alt="PLP Student Course Registration" width="600">
+</p>
+
+*Figure 2: PLP Student Course Registration / Register Courses*
+
+<p align="center">
+  <img src="https://i.imgur.com/xZy8AYF.png" alt="PLP Student Course Registration" width="600">
+</p>
+
+*Figure 2: PLP Student Course Registration / Records*
