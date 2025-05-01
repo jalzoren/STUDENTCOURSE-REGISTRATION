@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 820px;
+  height: 500px;
+  max-width: 1200px;
+  background: #e6ebef;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.image {
+    position: fixed;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100px; 
+    padding: 10px; 
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+.container {
+  padding: 25px;
+  border-radius: 10px;
+}
+
+
+
+
+hr{
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #022a6c;
+  text-transform: capitalize;
+}
+
+
+.container h3 {
+  text-align: left;
+  color: #022a6c;
+  text-transform: capitalize;
+}
+
+.message {
+  text-align: center;
+  color: #c50202;
+  text-transform: capitalize;
+  display: block;
+}
+
+
+
+.container h1 {
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+.container h1 span {
+  text-align: left;
+  color: #022a6c;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+
+.student-info {
+  background-color: #c6d4e6;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: #000000 solid 1px;
+  border-radius: 20px;
+}
+
+.info-left,
+.info-right {
+  width: 45%; 
+}
+
+.info-left p,
+.info-right p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info-left p span,
+.info-right p span {
+  font-weight: normal; 
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #022a6c;
+  font-weight: 500;
+}
+
+input[type="text"],input[type="number"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #b0c4de;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,input[type="number"]:focus,
+input[type="email"]:focus {
+  border-color: #022a6c;
+  background-color: #ffffff;
+  outline: none;
+}
+
+
+.course-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.course-table td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.course-option {
+  display: flex;
+  align-items: center;
+}
+
+.course-option label {
+  margin-top: 9px;
+  margin-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.course-option input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-left: 10px;
+
+}
+
+
+.enroll-courses {
+  width: 40%;
+  padding: 10px;
+  background-color: #022a6c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.enroll-courses:hover {
+  background-color: #012156;
+}
+
+.register-courses{
+  margin-top: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  padding-top: 60px;
+}
+
+i {
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s ease; 
+}
+
+i:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;  
+  padding-left: 0;  
+  margin: 20px; 
+}
+
+li {
+  text-decoration: none; 
+}
+
+
+
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+}
+
+
+.ad-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #022b6d;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.ad-footer p{
+    text-align: center;
+    color: #fff;
+gap: 10px;
+}
+
+.ad-footer p span{
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+
+}
+

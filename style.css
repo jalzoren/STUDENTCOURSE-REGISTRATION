@@ -10,7 +10,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background-image: url("../images/background.png");
+  background-image: url("./images/background.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -22,7 +22,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 420px;
-  height: 500px;
+  height: 520px;
   max-width: 1200px;
   background: #e6ebef;
   border-radius: 20px;
@@ -33,11 +33,11 @@ body {
 
 .image {
     position: fixed;
-    top: 2px;
+    top: -5px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 100px; 
-    padding: 10px; 
+    padding:10px; 
   }
   
   .image img {
@@ -69,8 +69,7 @@ label {
   font-weight: 500;
 }
 
-input[type="text"],input[type="number"],
-input[type="email"] {
+input[type="text"], input[type="number"], input[type="email"] {
   width: 100%;
   padding: 10px 10px;
   margin-bottom: 10px;
@@ -81,12 +80,23 @@ input[type="email"] {
   transition: all 0.3s ease;
 }
 
-input[type="text"]:focus,input[type="number"]:focus,
-input[type="email"]:focus {
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
   border-color: #022a6c;
-  background-color: #ffffff;
+  background-color: #f7f8fc;
   outline: none;
+  box-shadow: 0 0 8px rgba(2, 42, 108, 0.2);
+  transform: scale(1.02);
 }
+
+input[type="text"]:hover, input[type="number"]:hover, input[type="email"]:hover {
+  border-color: #0055a5;
+}
+
+input::placeholder {
+  color: #b0b0b0;
+  font-style: italic;
+}
+
 
 .register {
   width: 100%;
@@ -100,12 +110,88 @@ input[type="email"]:focus {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 5px;
+  margin-bottom: 2px;
+
 
 }
 
 .register:hover {
   background-color: #012156;
 }
+
+a.view-summary {
+  margin-left: 110px;
+  text-decoration: none;
+  list-style: none;
+  color: #012156;
+  font-weight: 500; 
+  transition: font-weight 0.5s ease, color 0.3s ease, transform 0.3s ease;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+
+
+.view-summary:hover {
+  margin-left: 110px;
+  font-weight: 600; 
+  transform: scale(1.02);
+}
+
+
+.popup {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.popup.show .popup-content {
+  transform: scale(1);
+}
+
+.popup button {
+  margin-top: 10px;
+  background-color: #022a6c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #012156;
+}
+
+
+
+
 
 
 .ad-footer {
