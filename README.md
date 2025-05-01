@@ -33,6 +33,23 @@ This mini project simulates a university course registration system. It's design
 
 ## File Structure
 
-<pre> ``` project-root/ ├── css/ │ ├── studentstyle.css # Styling for student registration page │ └── summarystyle.css # Styling for summary page │ ├── forms/ │ ├── student.php # Handles student input and stores in session │ └── summary.php # Displays selected courses │ ├── images/ │ ├── background.png # Background image │ └── logoplp.png # PLP logo image │ ├── index.php # Main course selection form ├── style.css # Shared or landing page styles └── README.md # Project documentation ``` </pre>
+project-root/
+│
+├── index.php                → Main course selection form
+├── style.css                → Shared or landing page styles
+├── README.md                → Project documentation
+│
+├── css/
+│   ├── studentstyle.css     → Styling for student registration page
+│   └── summarystyle.css     → Styling for summary page
+│
+├── forms/
+│   ├── student.php          → Handles student input and stores in session
+│   └── summary.php          → Displays selected courses
+│
+└── images/
+    ├── background.png       → Background image
+    └── logoplp.png          → PLP logo image
+
 
 
