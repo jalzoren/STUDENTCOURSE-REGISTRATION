@@ -31,6 +31,8 @@ This mini project simulates a university course registration system. It's design
 - HTML
 - CSS 
 
+---
+
 ## File Structure
 
 project-root/
@@ -51,6 +53,7 @@ project-root/
     ├── background.png       
     └── logoplp.png          
 
+---
 
 ## Screenshot / Interface Preview
 
@@ -71,8 +74,11 @@ Here’s a preview of the **Student Course Registration System** interface:
 
 *Figure 2: PLP Student Course Registration / Register Courses*
 
+
 <p align="center">
   <img src="https://imgur.com/hcaAsLy.png" alt="PLP Student Course Registration" width="600">
 </p>
 
 *Figure 3: PLP Student Course Registration / Records*
+
+---
