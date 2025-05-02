@@ -100,7 +100,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['courses'])) {
     </div>
   </div>
 
-<!-- Course Validation Popup -->
 <div id="emptyFieldPopup" class="popup">
   <div class="popup-content">
     <h3>Please fill out all fields!</h3>
@@ -108,7 +107,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['courses'])) {
   </div>
 </div>
 
-<!-- Confirmation Popup -->
 <div id="confirmationPopup" class="popup">
   <div class="popup-content">
     <h3>You have selected the following courses:</h3>

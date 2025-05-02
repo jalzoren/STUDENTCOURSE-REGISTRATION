@@ -33,11 +33,10 @@ body {
 
 .image {
     position: fixed;
-    top: 2px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 100px; 
-    padding: 10px; 
   }
   
   .image img {
