@@ -283,18 +283,24 @@ li {
   transform: scale(1);
 }
 
-.popup button {
+/* Style for input buttons */
+.popup input[type="button"] {
   margin-top: 10px;
   background-color: #022a6c;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-.popup button:hover {
+.popup input[type="button"]:hover {
   background-color: #012156;
 }
+
 
 
 .ad-footer {

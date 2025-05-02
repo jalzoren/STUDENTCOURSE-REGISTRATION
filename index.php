@@ -74,13 +74,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <a class="view-summary" href="./forms/summary.php">View Summary</a>
       </form>
     </div>
-      <div id="emptyFieldPopup" class="popup">
-        <div class="popup-content">
-          <h3>Please fill out all fields!</h3>
-          <button onclick="closepopup()">OK</button>
-        </div>
-      </div>
-  
+    <div id="emptyFieldPopup" class="popup">
+  <div class="popup-content">
+    <h3>Please fill out all fields!</h3>
+    <input type="button" value="OK" onclick="closepopup()" class="popup-btn" />
+  </div>
+</div>
+
 
       <script>
   function validateForm() {
